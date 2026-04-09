@@ -162,12 +162,11 @@
 }
 
 /* Responsive — sidebar becomes a top nav bar */
-@media (max-width: 977.12px),
-(max-height: 791.53px) {
+@media (max-width: 883px) {
   .sidebar {
     position: fixed;
     top: 0;
-    left: 0;
+    left: 0;    
     width: 100%;
     height: auto;
     flex-direction: row;

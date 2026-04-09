@@ -52,9 +52,13 @@ const Sidebar = ({ profile }) => {
         </a>
       </div>
 
-      <button className="btn-gradient download-btn" onClick={() => alert('Resume download coming soon!')}>
+      <a
+        href="/Aarush_Rastogi_Resume.pdf"
+        download="Aarush_Rastogi_Resume.pdf"
+        className="btn-gradient download-btn"
+      >
         <span>↓ Download CV</span>
-      </button>
+      </a>
 
       <div className="sidebar-stats">
         <div className="stat-item">
