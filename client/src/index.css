@@ -375,12 +375,19 @@ button {
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 977.12px), (max-height: 791.53px) {
+  .app-layout {
+    flex-direction: column;
+  }
+
   .main-content {
     margin-left: 0;
     margin-right: 0;
+    padding-top: 120px;
   }
+}
 
+@media (max-width: 992px) {
   .section {
     padding: 80px 30px;
   }

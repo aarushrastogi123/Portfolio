@@ -62,7 +62,7 @@
 }
 
 .profile-name {
-  font-family:lucida handwriting;
+  font-family: lucida handwriting;
   font-size: 1.4rem;
   font-weight: 700;
   text-align: center;
@@ -161,31 +161,98 @@
   background-clip: text;
 }
 
-/* Responsive */
-@media (max-width: 992px) {
+/* Responsive — sidebar becomes a top nav bar */
+@media (max-width: 977.12px),
+(max-height: 791.53px) {
   .sidebar {
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: auto;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 30px 20px;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 10px;
     border-right: none;
     border-bottom: 1px solid var(--border-color);
+    overflow-y: visible;
+    overflow-x: auto;
   }
 
   .sidebar::after {
     display: none;
   }
 
+  .profile-image-wrapper {
+    padding-left: 40px;
+    margin-bottom: 0;
+  }
+
   .profile-image-ring {
-    width: 100px;
-    height: 100px;
+    width: 56px;
+    height: 56px;
+  }
+
+  .status-dot {
+    width: 10px;
+    height: 10px;
+    bottom: 2px;
+    right: 2px;
+    border-width: 2px;
+  }
+
+  .profile-name{
+    font-family: 'Times New Roman', Times, serif;
+    padding-right: 50px;
+    align-items: center;
+  }
+
+  .profile-initials {
+    margin-bottom: 0;
+  }
+
+  .profile-title {
+    display: none;
+  }
+
+  .social-links {
+    margin-bottom: 0;
+    gap: 6px;
+  }
+
+  .social-link {
+    width: 32px;
+    height: 32px;
+    font-size: 0.75rem;
+  }
+
+  .download-btn {
+    margin-bottom: 0;
+    max-width: 160px;
+    padding: 8px 18px;
+    font-size: 0.8rem;
   }
 
   .sidebar-stats {
     flex-direction: row;
-    margin-top: 20px;
+    margin-top: 0;
+    gap: 8px;
+    width: auto;
+  }
+
+  .stat-item {
+    padding: 6px 12px;
+    gap: 6px;
+  }
+
+  .stat-label {
+    font-size: 0.65rem;
+  }
+
+  .stat-value {
+    font-size: 0.85rem;
   }
 }

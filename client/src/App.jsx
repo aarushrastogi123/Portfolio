@@ -44,12 +44,10 @@ function App() {
       { name: 'JavaScript', level: 60 },
       { name: 'Node.js', level: 60 },
       { name: 'HTML / CSS', level: 100 },
-      { name: 'MongoDB', level: 80 },
       { name: 'Machine Learning', level: 75 },
-      { name: 'Python', level: 70 },
+      { name: 'Python', level: 80 },
       { name: 'UI/UX Design', level: 82 },
       { name: 'Canva', level: 100 },
-      { name: 'REST APIs', level: 50 },
       { name: 'C++', level: 70 }
     ];
 
