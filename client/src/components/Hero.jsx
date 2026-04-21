@@ -1,5 +1,7 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense, lazy } from 'react';
 import './Hero.css';
+
+const AstronautModel = lazy(() => import('./AstronautModel'));
 
 const titles = ['AI & ML Engineer','UI/UX Designer', 'Critical Thinker','Problem Solver', 'Full Stack Developer'];
 
@@ -61,6 +63,13 @@ const Hero = ({ profile }) => {
       <div className="hero-float-element hero-float-1"></div>
       <div className="hero-float-element hero-float-2"></div>
       <div className="hero-float-element hero-float-3"></div>
+
+      {/* 3D Astronaut — floating above everything on the right */}
+      <div className="hero-astronaut-overlay">
+        <Suspense fallback={null}>
+          <AstronautModel />
+        </Suspense>
+      </div>
 
       <div className="hero-scroll-indicator">
         <span>Scroll Down</span>
