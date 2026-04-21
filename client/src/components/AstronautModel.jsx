@@ -15,7 +15,7 @@ function AstronautMesh({ pivotRef }) {
       child.material.emissive = new THREE.Color('#c9a0c9');
       child.material.emissiveIntensity = 0.1;
       child.material.roughness = 0.3;
-      child.material.metalness = 0.15;
+      child.material.metalness = 0.45;
     }
   });
 
@@ -42,7 +42,7 @@ function AstronautPivot() {
   useFrame(({ clock }) => {
     if (!pivotRef.current) return;
     const t = clock.getElapsedTime();
-    pivotRef.current.position.y = Math.sin(t * 0.8) * 0.15;
+    pivotRef.current.position.y = Math.sin(t * 0.3) * 0.15;
   });
 
   return (
