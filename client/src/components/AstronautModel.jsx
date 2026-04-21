@@ -61,6 +61,8 @@ export default function AstronautModel() {
         camera={{ position: [0, 0, 4.5], fov: 36 }}
         gl={{ alpha: true, antialias: true }}
         style={{ background: 'transparent' }}
+        width="600px"
+        height="700px"
       >
         <ambientLight intensity={0.8} />
         <directionalLight position={[3, 5, 4]} intensity={1.4} color="#ffffff" />
@@ -74,7 +76,7 @@ export default function AstronautModel() {
           enablePan={true}
           enableRotate={true}
           autoRotate={true}
-          autoRotateSpeed={5}
+          autoRotateSpeed={6}
           zoomSpeed={0.8}
           rotateSpeed={0.8}
           minDistance={2}
