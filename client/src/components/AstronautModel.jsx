@@ -42,11 +42,11 @@ function AstronautPivot() {
   useFrame(({ clock }) => {
     if (!pivotRef.current) return;
     const t = clock.getElapsedTime();
-    pivotRef.current.position.y = Math.sin(t * 0.3) * 0.15;
+    pivotRef.current.position.y = Math.sin(t * 2.5) * 0.1;
   });
 
   return (
-    <group ref={pivotRef} scale={1.1}>
+    <group ref={pivotRef} scale={1.0}>
       <Suspense fallback={null}>
         <AstronautMesh />
       </Suspense>
