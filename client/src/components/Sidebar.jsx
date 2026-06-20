@@ -53,7 +53,7 @@ const Sidebar = ({ profile }) => {
       </div>
 
       <a
-        href="/aarush_rastogii.pdf"
+        href="/Aarush_Rastogi.pdf"
         download="Aarush Rastogi Resume.pdf"
         className="btn-gradient download-btn"
       >
