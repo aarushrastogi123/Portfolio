@@ -36,7 +36,24 @@ function App() {
     const fallbackProjects = [
       { id: 1, title: 'VisionDX', description: 'VisionDX is a comprehensive AI-powered diagnostic platform designed to assist healthcare professionals in early disease detection. The system integrates advanced machine learning models to analyze medical images and patient data, providing accurate and rapid diagnostic suggestions. It features a secure, HIPAA-compliant architecture, real-time collaboration tools for multidisciplinary teams, and an intuitive interface that streamlines clinical workflows.', tags: ['Python', 'PyTorch',' Torchvision', 'ResNet50', 'FastAPI', 'Uvicorn', 'HTML', 'CSS', 'JavaScript', 'NumPy', 'Scikit-learn', 'Pillow', 'Git', 'GitHub'], link: 'https://vision-dx-seven.vercel.app/' },
       { id: 2, title: 'EdgeVisionNet', description: 'EdgeVisionNet is an advanced Edge AI platform designed to deliver real-time image classification while optimizing energy efficiency on resource-constrained devices. The system combines a lightweight attention-enhanced deep learning architecture with live device telemetry monitoring to analyze CPU, memory, battery, and power consumption during AI inference. By integrating TensorFlow Lite optimization, EdgeVisionNet achieves low-latency and energy-efficient performance suitable for edge deployment. The platform also features an interactive analytics dashboard that visualizes model performance, energy savings, and device health, making it ideal for applications in smart surveillance, healthcare, IoT, industrial automation, and intelligent edge computing environments.', tags: ['React.js', 'Ant Design', 'FastAPI', 'TensorFlow', 'TensorFlow Lite', 'MobileNetV2', 'EfficientNet-B0', 'Python', 'Psutil', 'SQLite', 'JWT Authentication', 'Chart.js', 'NumPy', 'Pandas', 'Scikit-learn.'], link: '#' },
-      { id: 3, title: 'To be Updated', description: 'To be announced', tags: ['Next.js', 'OpenAI', 'TailwindCSS'], link: '#' },
+      { id: 3, title: 'E-Commerce Website', description: 'To be announced', tags: ["React.js",
+    "Vite",
+    "HTML5",
+    "CSS3",
+    "JavaScript (ES6+)",
+    "Tailwind CSS",
+    "Node.js",
+    "Express.js",
+    "REST API",
+    "PostgreSQL",
+    "JWT Authentication",
+    "bcrypt.js",
+    "Cloudinary",
+    "Multer",
+    "Razorpay",
+    "Git",
+    "GitHub",
+    "Vercel"], link: 'https://void-tees.vercel.app/' },
       { id: 4, title: 'To be Updated', description: 'To be announced', tags: ['React', 'D3.js', 'Express'], link: '#' }
     ];
     const fallbackSkills = [
