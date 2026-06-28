@@ -53,9 +53,7 @@ function App() {
     "Razorpay",
     "Git",
     "GitHub",
-    "Vercel"], link: 'https://void-tees.vercel.app/' },
-      { id: 4, title: 'To be Updated', description: 'To be announced', tags: ['React', 'D3.js', 'Express'], link: '#' }
-    ];
+    "Vercel"], link: 'https://void-tees.vercel.app/' }]
     const fallbackSkills = [
       { name: 'React', level: 65 },
       { name: 'JavaScript', level: 60 },
