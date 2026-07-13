@@ -34,8 +34,18 @@ const sections = [
   )}
 ];
 
+/** Envelope SVG icon used for the intro replay button */
+const EnvelopeIcon = () => (
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+    <polyline points="22,6 12,13 2,6"/>
+  </svg>
+);
+
 const NavDots = () => {
   const [activeSection, setActiveSection] = useState('hero');
+  // Show replay button only after intro was completed this session
+  const introSeen = sessionStorage.getItem('portfolio_intro_v1') === '1';
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -64,6 +74,10 @@ const NavDots = () => {
     }
   };
 
+  const handleReplayIntro = () => {
+    window.dispatchEvent(new CustomEvent('portfolio:replay-intro'));
+  };
+
   return (
     <nav className="nav-dots" id="nav-dots">
       {sections.map(({ id, label, icon }) => (
@@ -77,8 +91,24 @@ const NavDots = () => {
           <span className="nav-dot-tooltip">{label}</span>
         </button>
       ))}
+
+      {/* ── Replay intro button ── */}
+      {introSeen && (
+        <div className="nav-dot-replay-wrapper">
+          <button
+            className="nav-dot"
+            onClick={handleReplayIntro}
+            aria-label="Replay intro"
+            title="Replay intro"
+          >
+            <EnvelopeIcon />
+            <span className="nav-dot-tooltip">Replay Intro</span>
+          </button>
+        </div>
+      )}
     </nav>
   );
 };
 
 export default NavDots;
+
