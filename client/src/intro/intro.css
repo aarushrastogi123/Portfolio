@@ -42,8 +42,6 @@
   letter-spacing: 0.3px;
   cursor: pointer;
   transition: background 0.2s, color 0.2s, border-color 0.2s;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
 }
 
 .intro-skip-btn:hover {
@@ -65,8 +63,6 @@
   align-items: center;
   justify-content: center;
   transition: background 0.2s, color 0.2s;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
   flex-shrink: 0;
 }
 
@@ -88,43 +84,42 @@
 .intro-blob {
   position: absolute;
   border-radius: 50%;
-  filter: blur(110px);
+  filter: blur(55px);
   opacity: 0;
-  will-change: transform, opacity;
 }
 
 .intro-blob-1 {
-  width: 680px;
-  height: 680px;
-  background: radial-gradient(circle, rgba(0, 212, 255, 0.7), transparent 70%);
-  top: -180px;
-  left: -120px;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(0, 212, 255, 0.5), transparent 70%);
+  top: -120px;
+  left: -80px;
   animation:
     intro-blob-appear 1.4s 0.2s ease-out forwards,
-    intro-blob-drift-1 16s 1.6s ease-in-out infinite;
+    intro-blob-drift-1 20s 1.6s ease-in-out infinite;
 }
 
 .intro-blob-2 {
-  width: 580px;
-  height: 580px;
-  background: radial-gradient(circle, rgba(168, 85, 247, 0.6), transparent 70%);
-  bottom: -120px;
-  right: -100px;
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(circle, rgba(168, 85, 247, 0.45), transparent 70%);
+  bottom: -80px;
+  right: -60px;
   animation:
     intro-blob-appear 1.4s 0.4s ease-out forwards,
-    intro-blob-drift-2 19s 1.8s ease-in-out infinite;
+    intro-blob-drift-2 24s 1.8s ease-in-out infinite;
 }
 
 .intro-blob-3 {
-  width: 460px;
-  height: 460px;
-  background: radial-gradient(circle, rgba(236, 72, 153, 0.45), transparent 70%);
+  width: 340px;
+  height: 340px;
+  background: radial-gradient(circle, rgba(236, 72, 153, 0.35), transparent 70%);
   top: 45%;
   left: 45%;
   transform: translate(-50%, -50%);
   animation:
     intro-blob-appear 1.4s 0.7s ease-out forwards,
-    intro-blob-drift-3 12s 2.1s ease-in-out infinite;
+    intro-blob-drift-3 16s 2.1s ease-in-out infinite;
 }
 
 @keyframes intro-blob-appear {
@@ -153,9 +148,8 @@
 .intro-particle {
   position: absolute;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.55);
+  background: rgba(255, 255, 255, 0.4);
   pointer-events: none;
-  will-change: transform, opacity;
 }
 
 @keyframes intro-particle-float {
@@ -176,14 +170,12 @@
 
 .notification-card {
   width: 300px;
-  background: rgba(14, 14, 22, 0.94);
-  backdrop-filter: blur(28px);
-  -webkit-backdrop-filter: blur(28px);
+  background: rgba(12, 12, 20, 0.97);
   border: 1px solid rgba(255, 255, 255, 0.09);
   border-radius: 18px;
   padding: 14px 16px 16px;
   box-shadow:
-    0 24px 70px rgba(0, 0, 0, 0.65),
+    0 20px 50px rgba(0, 0, 0, 0.6),
     0 6px 18px rgba(0, 0, 0, 0.3),
     inset 0 1px 0 rgba(255, 255, 255, 0.06);
   position: relative;
@@ -339,14 +331,8 @@
   background: linear-gradient(160deg, #eee8de 0%, #e1dace 60%, #d9d1c5 100%);
 }
 
-/* Subtle grain texture via inline SVG */
-.env-grain {
-  position: absolute;
-  inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.72' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");
-  pointer-events: none;
-  mix-blend-mode: multiply;
-}
+/* Grain removed — SVG feTurbulence is too GPU-intensive */
+.env-grain { display: none; }
 
 /* Specular highlight that follows the mouse */
 .env-specular {
@@ -643,16 +629,8 @@
 .paper-sheet::-webkit-scrollbar-track { background: transparent; }
 .paper-sheet::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.12); border-radius: 2px; }
 
-/* Grain texture overlay (pseudo-element) */
-.paper-sheet::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
-  pointer-events: none;
-  z-index: 1;
-  mix-blend-mode: multiply;
-}
+/* Grain removed — SVG feTurbulence too expensive; paper texture kept via background colour */
+.paper-sheet::before { display: none; }
 
 /* Red margin line */
 .paper-margin-line {

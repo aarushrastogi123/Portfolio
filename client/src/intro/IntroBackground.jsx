@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 import './intro.css';
 
-const PARTICLE_COUNT = 46;
+const PARTICLE_COUNT = 18;
 
 function rand(min, max) {
   return Math.random() * (max - min) + min;
