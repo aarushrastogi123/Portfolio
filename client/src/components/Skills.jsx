@@ -2,9 +2,9 @@ import { useState, useEffect, useRef } from 'react';
 import './Skills.css';
 
 const techBadges = [
-  'React', 'JavaScript', 'HTML','CSS', 'Node.js',
+  'React', 'JavaScript', 'HTML', 'CSS', 'Node.js',
   'MongoDB', 'Python', 'C++', 'Canva',
-  'VS Code','Antigravity', 'REST APIs', 'Machine Learning','Artificial Intelligence'
+  'VS Code', 'Antigravity', 'REST APIs', 'Machine Learning', 'Artificial Intelligence'
 ];
 
 const Skills = ({ skills }) => {

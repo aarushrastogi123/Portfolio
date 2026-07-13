@@ -3,7 +3,7 @@ import './Hero.css';
 
 const AstronautModel = lazy(() => import('./AstronautModel'));
 
-const titles = ['AI & ML Engineer','UI/UX Designer', 'Critical Thinker','Problem Solver', 'Full Stack Developer'];
+const titles = ['AI & ML Engineer', 'UI/UX Designer', 'Critical Thinker', 'Problem Solver', 'Full Stack Developer'];
 
 const Hero = ({ profile }) => {
   const [titleIndex, setTitleIndex] = useState(0);
