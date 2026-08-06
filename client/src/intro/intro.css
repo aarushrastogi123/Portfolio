@@ -319,8 +319,8 @@
   overflow: hidden;
   /* Warm glass background */
   background: rgba(238, 232, 222, 0.72);
-  backdrop-filter: blur(24px) saturate(1.4);
   -webkit-backdrop-filter: blur(24px) saturate(1.4);
+  backdrop-filter: blur(24px) saturate(1.4);
   border: 1px solid rgba(210, 195, 172, 0.55);
   box-shadow:
     /* warm golden outer glow */
@@ -456,6 +456,7 @@
   justify-content: center;
   font-size: 19px;
   background: rgba(255, 252, 245, 0.35);
+  -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
   z-index: 6;
 }
@@ -491,8 +492,8 @@
   position: absolute;
   inset: 0;
   clip-path: polygon(0% 0%, 100% 0%, 50% 72%);
-  backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .env-flap-front {
@@ -639,7 +640,6 @@
   overflow: hidden;
   max-height: 88vh;
   overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
   scrollbar-width: thin;
   scrollbar-color: rgba(0,0,0,0.12) transparent;
 }
