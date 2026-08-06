@@ -63,7 +63,7 @@ const Sidebar = ({ profile }) => {
       <div className="sidebar-stats">
         <div className="stat-item">
           <span className="stat-label">Experience</span>
-          <span className="stat-value">1 yr</span>
+          <span className="stat-value">Fresher</span>
         </div>
         <div className="stat-item">
           <span className="stat-label">Projects</span>
