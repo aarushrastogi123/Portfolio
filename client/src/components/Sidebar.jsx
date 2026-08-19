@@ -1,6 +1,9 @@
+import { useState } from 'react';
 import './Sidebar.css';
+import ResumeModal from './ResumeModal';
 
 const Sidebar = ({ profile }) => {
+  const [showResume, setShowResume] = useState(false);
   return (
     <aside className="sidebar" id="sidebar">
       <div className="profile-image-wrapper">
@@ -52,13 +55,14 @@ const Sidebar = ({ profile }) => {
         </a>
       </div>
 
-      <a
-        href="/Aarush_Rastogi.pdf"
-        download="Aarush Rastogi Resume.pdf"
+      <button
         className="btn-gradient download-btn"
+        onClick={() => setShowResume(true)}
       >
         <span>↓ Download CV</span>
-      </a>
+      </button>
+
+      <ResumeModal isOpen={showResume} onClose={() => setShowResume(false)} />
 
       <div className="sidebar-stats">
         <div className="stat-item">
