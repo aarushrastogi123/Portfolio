@@ -34,7 +34,31 @@ function App() {
       { id: 3, title: 'People Management', description: 'Leading cross-functional teams, mentoring developers, and driving projects from ideation to deployment with agile methodologies.', image: '/images/people-management.png' }
     ];
     const fallbackProjects = [
-      { id: 1, title: 'VisionDX', description: 'VisionDX is a comprehensive AI-powered diagnostic platform designed to assist healthcare professionals in early disease detection. The system integrates advanced machine learning models to analyze medical images and patient data, providing accurate and rapid diagnostic suggestions. It features a secure, HIPAA-compliant architecture, real-time collaboration tools for multidisciplinary teams, and an intuitive interface that streamlines clinical workflows.', tags: ['Python', 'PyTorch', ' Torchvision', 'ResNet50', 'FastAPI', 'Uvicorn', 'HTML', 'CSS', 'JavaScript', 'NumPy', 'Scikit-learn', 'Pillow', 'Git', 'GitHub'], link: 'https://vision-dx-seven.vercel.app/' },
+      {
+        id: 1,
+        title: 'VisionDX',
+        description:
+          'VisionDX is an AI-powered retinal image analysis platform that assists in identifying potential eye diseases from retinal fundus images. Built with a PyTorch-based ResNet50 deep learning model, the platform analyzes uploaded images and provides a predicted class, confidence score, and detailed prediction breakdown across seven retinal disease classes. It also includes user authentication and a personal prediction history, allowing users to securely save and review their previous analysis results.',
+        tags: [
+          'Next.js',
+          'TypeScript',
+          'Python',
+          'PyTorch',
+          'Torchvision',
+          'ResNet50',
+          'FastAPI',
+          'Uvicorn',
+          'Prisma',
+          'PostgreSQL',
+          'JWT',
+          'NumPy',
+          'Pillow',
+          'Tailwind CSS',
+          'Git',
+          'GitHub'
+          ],
+        link: 'https://visiondx.vercel.app/'
+        },
       { id: 2, title: 'EdgeVisionNet', description: 'EdgeVisionNet is an advanced Edge AI platform designed to deliver real-time image classification while optimizing energy efficiency on resource-constrained devices. The system combines a lightweight attention-enhanced deep learning architecture with live device telemetry monitoring to analyze CPU, memory, battery, and power consumption during AI inference. By integrating TensorFlow Lite optimization, EdgeVisionNet achieves low-latency and energy-efficient performance suitable for edge deployment. The platform also features an interactive analytics dashboard that visualizes model performance, energy savings, and device health, making it ideal for applications in smart surveillance, healthcare, IoT, industrial automation, and intelligent edge computing environments.', tags: ['React.js', 'Ant Design', 'FastAPI', 'TensorFlow', 'TensorFlow Lite', 'MobileNetV2', 'EfficientNet-B0', 'Python', 'Psutil', 'SQLite', 'JWT Authentication', 'Chart.js', 'NumPy', 'Pandas', 'Scikit-learn.'], link: '#' },
       {
         id: 3, title: 'E-Commerce Website', description: 'Developed a full-stack e-commerce platform that provides a seamless online shopping experience with secure user authentication, product browsing, advanced search and filtering, shopping cart functionality, and order management. The platform includes an admin dashboard for managing products, categories, inventory, and customer orders. Built with a responsive and user-friendly interface, it integrates RESTful APIs for efficient communication between the frontend and backend, ensuring scalability, performance, and a smooth user experience across devices.', tags: ["React.js",
