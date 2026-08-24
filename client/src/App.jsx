@@ -35,30 +35,30 @@ function App() {
     ];
     const fallbackProjects = [
       {
-  id: 1,
-  title: 'VisionDX',
-  description:
-    'VisionDX is an AI-powered retinal image analysis platform that assists in identifying potential eye diseases from retinal fundus images. Built with a PyTorch-based ResNet50 deep learning model, VisionDX classifies images across seven retinal disease classes and achieved 96.93% test accuracy with a 96.94% weighted F1-score on 1,236 test images. The platform provides prediction confidence and class-wise probability breakdowns, while secure user authentication and prediction history allow users to save and review previous analyses.',
-  tags: [
-    'Next.js',
-    'TypeScript',
-    'Python',
-    'PyTorch',
-    'Torchvision',
-    'ResNet50',
-    'FastAPI',
-    'Uvicorn',
-    'Prisma',
-    'PostgreSQL',
-    'JWT',
-    'NumPy',
-    'Pillow',
-    'Tailwind CSS',
-    'Git',
-    'GitHub'
-  ],
-  link: 'https://visiondx.vercel.app/'
-},
+        id: 1,
+        title: 'VisionDX',
+        description:
+          'VisionDX is an AI-powered retinal image analysis platform that assists in identifying potential eye diseases from retinal fundus images. Built with a PyTorch-based ResNet50 deep learning model, VisionDX classifies images across seven retinal disease classes and achieved 96.93% test accuracy with a 96.94% weighted F1-score on 1,236 test images. The platform provides prediction confidence and class-wise probability breakdowns, while secure user authentication and prediction history allow users to save and review previous analyses.',
+        tags: [
+          'Next.js',
+          'TypeScript',
+          'Python',
+          'PyTorch',
+          'Torchvision',
+          'ResNet50',
+          'FastAPI',
+          'Uvicorn',
+          'Prisma',
+          'PostgreSQL',
+          'JWT',
+          'NumPy',
+          'Pillow',
+          'Tailwind CSS',
+          'Git',
+          'GitHub'
+        ],
+        link: 'https://visiondx.vercel.app/'
+      },
       { id: 2, title: 'EdgeVisionNet', description: 'EdgeVisionNet is an advanced Edge AI platform designed to deliver real-time image classification while optimizing energy efficiency on resource-constrained devices. The system combines a lightweight attention-enhanced deep learning architecture with live device telemetry monitoring to analyze CPU, memory, battery, and power consumption during AI inference. By integrating TensorFlow Lite optimization, EdgeVisionNet achieves low-latency and energy-efficient performance suitable for edge deployment. The platform also features an interactive analytics dashboard that visualizes model performance, energy savings, and device health, making it ideal for applications in smart surveillance, healthcare, IoT, industrial automation, and intelligent edge computing environments.', tags: ['React.js', 'Ant Design', 'FastAPI', 'TensorFlow', 'TensorFlow Lite', 'MobileNetV2', 'EfficientNet-B0', 'Python', 'Psutil', 'SQLite', 'JWT Authentication', 'Chart.js', 'NumPy', 'Pandas', 'Scikit-learn.'], link: '#' },
       {
         id: 3, title: 'E-Commerce Website', description: 'Developed a full-stack e-commerce platform that provides a seamless online shopping experience with secure user authentication, product browsing, advanced search and filtering, shopping cart functionality, and order management. The platform includes an admin dashboard for managing products, categories, inventory, and customer orders. Built with a responsive and user-friendly interface, it integrates RESTful APIs for efficient communication between the frontend and backend, ensuring scalability, performance, and a smooth user experience across devices.', tags: ["React.js",
